@@ -1,28 +1,28 @@
-class smartphoneServices {
+class computadoresServices {
   
     productos=[ {
       "id": 1,
-      "marca": "samsung",
-      "modelo": "galaxy s20",
+      "marca": "Asus",
+      "modelo": "mdb21",
       "precio": 600
   },
   {
       "id": 2,
       "marca": "Apple",
-      "modelo": "Iphones X",
-      "precio": 300
+      "modelo": "Mcbook",
+      "precio": 1000
   },
   {
       "id": 3,
-      "marca": "Apple",
-      "modelo": "Iphones 13",
+      "marca": "Acer",
+      "modelo": "flip",
       "precio": 1000,
       
   },
   {
       "id": 4,
-      "marca": "Samsung",
-      "modelo": "Z flip",
+      "marca": "Hp",
+      "modelo": "Pavilion",
       "precio": 800
   },
   {
@@ -69,5 +69,4 @@ class smartphoneServices {
     }
   };
 }
-
-module.exports = smartphoneServices;
+module.exports =computadoresServices;

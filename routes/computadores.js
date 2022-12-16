@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const smartphoneServices =require('../services/smartphoneServices')  ;
-const service = new smartphoneServices ();
+const computadoresServices =require('../services/computadoresServices')  ;
+const service = new computadoresServices ();
 
 router.get("/", (req, res) => {
   const products = service.find()
@@ -23,7 +23,7 @@ router.post('/',(req,res)=>{
 
 
 router.put('/:id', (req, res) => {
-  const  {id}  = req.params;
+  const  id  = req.params.id;
   const body = req.body;
   const product =service.update(id, body)
   res.json(product);
@@ -32,8 +32,8 @@ router.put('/:id', (req, res) => {
  
 
 router.delete('/:id', (req, res) => {
-  const { id } = req.params;
-  const rta = service.delete(id);
+  const  id  = req.params.id;
+  const rta =service.delete(id);
   res.json(rta);
 });
 module.exports = router
